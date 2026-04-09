@@ -3,22 +3,28 @@ import './App.css'
 const highlights = [
   {
     title: 'Sakurajima, the symbol of Kagoshima',
-    text: 'One of Japan’s most iconic active volcanoes, Sakurajima defines the skyline and gives the city a dramatic sense of place.',
+    text: 'One of Japan\u2019s most iconic active volcanoes, Sakurajima defines the skyline and gives the city a dramatic sense of place.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/b/b6/Sakurajima_at_Sunset.jpg',
+    imageAlt: 'Sakurajima volcano at sunset',
   },
   {
     title: 'A city made for easy conference travel',
-    text: 'Kagoshima is well connected by air, Shinkansen, airport limousine bus, tram, and taxi—making venue access refreshingly simple.',
+    text: 'Kagoshima is well connected by air, Shinkansen, airport limousine bus, tram, and taxi\u2014making venue access refreshingly simple.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/2/27/Kagoshima_City_Tramcar_at_Shiyakusho-mae_Station.jpg',
+    imageAlt: 'Kagoshima city tram at Shiyakusho-mae station',
   },
   {
     title: 'Food, scenery, and warm hospitality',
     text: 'From Sengan-en and bay views to local specialties and footbaths near Sakurajima, Kagoshima offers a memorable conference stay.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/f/fe/Sengan-en2.jpg',
+    imageAlt: 'Sengan-en garden in Kagoshima',
   },
 ]
 
 const conferenceFacts = [
   ['Event', 'Cherry Blossom Symposium 2026 (CBS 2026)'],
   ['Subtitle', 'The 14th International Conference of Clinical Laboratory Automation'],
-  ['Dates', 'April 9 (Thu) – 11 (Sat), 2026'],
+  ['Dates', 'April 9 (Thu) \u2013 11 (Sat), 2026'],
   ['Theme', 'Future Dreams Come True in Automation and Robotics'],
   ['Venue', 'Kagoshima Prefectural Citizens Exchange Center'],
   ['Language', 'English'],
@@ -31,9 +37,9 @@ const programPoints = [
 ]
 
 const travelTips = [
-  'Kagoshima Airport → Kagoshima Chuo Station: about 40–50 minutes by limousine bus',
-  'Kagoshima Chuo Station → venue: about 10 minutes by city tram to Suizokukanguchi + 4-minute walk',
-  'JR Kagoshima Station → venue: about 10 minutes on foot',
+  'Kagoshima Airport \u2192 Kagoshima Chuo Station: about 40\u201350 minutes by limousine bus',
+  'Kagoshima Chuo Station \u2192 venue: about 10 minutes by city tram to Suizokukanguchi + 4-minute walk',
+  'JR Kagoshima Station \u2192 venue: about 10 minutes on foot',
 ]
 
 function App() {
@@ -41,10 +47,10 @@ function App() {
     <main className="page-shell">
       <section className="hero-section">
         <div className="hero-copy">
-          <span className="eyebrow">CBS 2026 × Kagoshima</span>
-          <h1>Where clinical laboratory automation meets one of Japan’s most unforgettable cities.</h1>
+          <span className="eyebrow">CBS 2026 \u00d7 Kagoshima</span>
+          <h1>Where clinical laboratory automation meets one of Japan's most unforgettable cities.</h1>
           <p>
-            Cherry Blossom Symposium 2026 brings global experts in automation, robotics, AI, and digital healthcare to Kagoshima—
+            Cherry Blossom Symposium 2026 brings global experts in automation, robotics, AI, and digital healthcare to Kagoshima\u2014
             a city of volcano views, elegant gardens, excellent access, and warm southern hospitality.
           </p>
           <div className="hero-actions">
@@ -63,8 +69,11 @@ function App() {
       <section className="info-grid">
         {highlights.map((item) => (
           <article key={item.title} className="info-card">
-            <h2>{item.title}</h2>
-            <p>{item.text}</p>
+            <img className="info-card-image" src={item.image} alt={item.imageAlt} />
+            <div className="info-card-content">
+              <h2>{item.title}</h2>
+              <p>{item.text}</p>
+            </div>
           </article>
         ))}
       </section>
@@ -106,10 +115,26 @@ function App() {
           <span className="section-label">Kagoshima atmosphere</span>
           <h2>A conference destination with real character</h2>
           <p>
-            Kagoshima’s official tourism site highlights landmarks such as Sengan-en, Sakurajima, Kotsuki River, local food stalls,
-            the aquarium, bicycle routes, kayaking, and the famous Sakurajima footbath. It’s the kind of city where conference time
+            Kagoshima's official tourism site highlights landmarks such as Sengan-en, Sakurajima, Kotsuki River, local food stalls,
+            the aquarium, bicycle routes, kayaking, and the famous Sakurajima footbath. It's the kind of city where conference time
             and travel time fit together naturally.
           </p>
+          <div className="food-gallery">
+            <div className="food-gallery-item">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Kagoshima_Ramen.jpg"
+                alt="Kagoshima ramen with rich pork bone broth"
+              />
+              <span>Kagoshima Ramen</span>
+            </div>
+            <div className="food-gallery-item">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Sengan-en_4.jpg"
+                alt="Sengan-en garden"
+              />
+              <span>Sengan-en Garden</span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -139,7 +164,7 @@ function App() {
         <h2>Come for the science. Stay for the city.</h2>
         <p>
           CBS 2026 in Kagoshima offers more than a conference schedule. It combines meaningful scientific exchange with a venue city
-          that is scenic, accessible, and memorable—an ideal setting for conversations about the future of automation, AI, and digital healthcare.
+          that is scenic, accessible, and memorable\u2014an ideal setting for conversations about the future of automation, AI, and digital healthcare.
         </p>
         <div className="hero-actions center">
           <a href="https://www.cbs-labauto.com/14th/program.html" target="_blank" rel="noreferrer">View Program</a>
