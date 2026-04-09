@@ -60,8 +60,8 @@ function App() {
         </div>
         <div className="hero-visual">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/5/50/Sakurajima_from_Kagoshima.jpg"
-            alt="Sakurajima seen from Kagoshima"
+            src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Kagoshima_and_Sakurajima.jpg"
+            alt="Kagoshima city with Sakurajima volcano"
           />
         </div>
       </section>
@@ -108,8 +108,8 @@ function App() {
 
       <section className="image-band">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Sengan-en_and_Sakurajima.jpg"
-          alt="Sengan-en with Sakurajima in the background"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Sakurajima_from_Sengan-en.jpg/1280px-Sakurajima_from_Sengan-en.jpg"
+          alt="Sakurajima seen from Sengan-en garden"
         />
         <div className="image-copy">
           <span className="section-label">Kagoshima atmosphere</span>
@@ -153,8 +153,8 @@ function App() {
         </div>
         <div className="travel-image">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Kagoshima_City_view.jpg"
-            alt="View of Kagoshima city"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Kagoshima-central-tower-20201006.jpg/1280px-Kagoshima-central-tower-20201006.jpg"
+            alt="Kagoshima Chuo Station area"
           />
         </div>
       </section>
